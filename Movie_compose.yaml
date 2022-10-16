@@ -1,7 +1,7 @@
 version: "3"
 services:
   app:
-    image: app:latest
+    image: app:2.0.8 #change to latest when deploying on EC2
     depends_on:
       - mongodb
     ports:
@@ -9,8 +9,8 @@ services:
     networks:
             appnet:
                 ipv4_address: 172.24.2.1
-    environment:
-      - API_key="$API_KEY"
+    # environment:
+    #   - API_key="$API_KEY" # activate SSM Parameter store fucntion when deploying on EC2
   
   mongodb:
     image: mongo:latest
