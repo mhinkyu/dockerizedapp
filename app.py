@@ -89,6 +89,5 @@ def get_posters(movie_name):
         return get_poster(movie_posters['name'])
     return f'<h2>{db_img_meta["moviename"]}</h2><img src = "data:image/png;base64, {image}" style="display: block; margin-left: auto; margin-right: auto; width: 50%; " alt= "myImage" />'
 
-
-
-app.run(host='0.0.0.0', port=5001, debug = True)
+if __name__ == "__main__":
+    app.run(host='0.0.0.0', port=5002, debug = True)
