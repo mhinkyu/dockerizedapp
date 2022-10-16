@@ -7,6 +7,7 @@ import Mongoapp
 
 app = Flask(__name__)
 
+# my_mongo = Mongoapp.Mongo('172.24.2.2', 27017, 'movieland', 'movieposters')
 my_mongo = Mongoapp.Mongo('localhost', 27017, 'movieland', 'movieposters')
 
 @app.route('/')
@@ -90,4 +91,4 @@ def get_posters(movie_name):
     return f'<h2>{db_img_meta["moviename"]}</h2><img src = "data:image/png;base64, {image}" style="display: block; margin-left: auto; margin-right: auto; width: 50%; " alt= "myImage" />'
 
 if __name__ == "__main__":
-    app.run(host='0.0.0.0', port=5002, debug = True)
+    app.run(host='0.0.0.0', port=5001, debug = True)
