@@ -229,8 +229,6 @@
   }
 
   async function getPoster() {
-    document.getElementById('successAlert').style.display='none';
-    document.getElementById('movieCard').style.display='block';
     let search_query = document.getElementById("queryMovie").value;
     let search_url = `/poster/${search_query}`
     let img_src_res;
@@ -247,6 +245,8 @@
     document.getElementById("movieOverview").innerHTML = response.overview
     document.getElementById("releaseDate").innerHTML = response.release
     document.getElementById('posterDiv').style.display='block';
+    document.getElementById('successAlert').style.display='none';
+    document.getElementById('movieCard').style.display='block';
     editMovie();
 }
   </script>
