@@ -70,4 +70,6 @@ class Mongo:
 
     def delete_file(self, fileId, file_collection=None ):
         self.gfs.delete(fileId)
- 
+
+if __name__ == "__main__":
+    mongo = Mongo('localhost', 27017, 'movieland', 'movieposters')
