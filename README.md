@@ -18,4 +18,4 @@
 <img src="https://img.shields.io/badge/dependency-flask-blue" alt="dependency - flask" align="center"></a> 
 
 ### WebApp
-<img src="/Users/mhinkyu/Desktop/webapp.png" alt="dependency - flask" align="center"></a>
+<img src="webapp.png" align="center"></a>
