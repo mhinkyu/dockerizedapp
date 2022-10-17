@@ -17,5 +17,11 @@
 <img src="https://img.shields.io/badge/dependency-bs4-blue?logo=bs4&logoColor=white" alt="dependency - bs4" align="center"></a> 
 <img src="https://img.shields.io/badge/dependency-flask-blue" alt="dependency - flask" align="center"></a> 
 
-### WebApp
+## WebApp
 <img src="webapp.png" align="center"></a>
+### **Installation**
+
+Use the package manager [pip](https://pip.pypa.io/en/stable/) to install the dependencies needed
+```bash
+pip install flask , bs4 , urllib3 , requests , pymongo
+```
