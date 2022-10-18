@@ -9,8 +9,8 @@ services:
     networks:
             appnet:
                 ipv4_address: 172.24.2.1
-    # environment:
-    #   - API_key="$API_KEY" # activate SSM Parameter store fucntion when deploying on EC2
+    environment:
+       - API_key="$API_KEY" # activate SSM Parameter store fucntion when deploying on EC2
   
   mongodb:
     image: mongo:latest

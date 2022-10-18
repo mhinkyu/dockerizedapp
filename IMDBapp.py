@@ -1,7 +1,7 @@
 import pip._vendor.requests as requests
 import os
-from config import API_key as key
-# key = os.getenv('API_key')
+#from config import API_key as key
+key = os.getenv('API_key')
 
 class MOVIES:
     def __init__(self, movie_id = None, movie_name = None):
