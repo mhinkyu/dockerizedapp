@@ -1,7 +1,7 @@
 version: "3"
 services:
   app:
-    image: app:2.0.8 #change to latest when deploying on EC2
+    image: app:2.0.9 #change to latest when deploying on EC2
     depends_on:
       - mongodb
     ports:
