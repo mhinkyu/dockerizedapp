@@ -17,7 +17,6 @@ git clone https://github.com/mhinkyu/dockerizedapp.git
 sudo cd ./MoviePoster-web/
 docker build . -t app:latest
 docker exec -it dockerizedapp-app-1 sh
-export API_KEY=53368837602b81de55a03445d3929369
 exit 
 docker-compose -f Movie_compose.yaml up
 
