@@ -20,8 +20,15 @@
 ## WebApp
 <img src="webapp.png" align="center"></a>
 ### **Installation**
-
-Use the package manager [pip](https://pip.pypa.io/en/stable/) to install the dependencies needed
+Prerequisites
 ```bash
-pip install flask , bs4 , urllib3 , requests , pymongo
+Docker, Git 
 ```
+
+### stepes
+1. Clone this repostory to your computer.
+2. Move to the directory of the cloned folder.
+3. In the terminal run the command `docker build . -t app:latest`
+4. Run the command `docker-compose -f Movie_compose.yaml up`
+5. The prompt should return and IP address with port 5003 for you to access the web appliction.
+
