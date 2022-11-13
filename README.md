@@ -31,4 +31,3 @@ Docker, Git
 3. In the terminal run the command `docker build . -t app:latest`
 4. Run the command `docker-compose -f Movie_compose.yaml up`
 5. The prompt should return and IP address with port 5003 for you to access the web appliction.
-
